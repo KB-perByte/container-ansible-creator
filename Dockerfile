@@ -1,13 +1,10 @@
-# Use a base image with necessary dependencies
 FROM python:3.10
-
-# Set the working directory
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
+# Copy the current directory contents into the container at /app to build proj
 COPY . /app
 
-# Install any dependencies needed for your service
+# Install flask and ansible-creator
 RUN pip install flask ansible-creator
 
 # Expose the port your service runs on

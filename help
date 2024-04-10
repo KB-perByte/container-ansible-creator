@@ -1,0 +1,2 @@
+podman ps -a | grep Up
+podman exec -ti <ID> /bin/bash
