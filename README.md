@@ -8,5 +8,5 @@ Builds a container with ansible creator to scaffold a collection within it and e
  curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"collection_name": "myapp.test"}' \
-  http://localhost:3100/fetch_collection_tar --output .
+  http://localhost:3100/fetch_collection_tar --output collection.tgz
 ```
